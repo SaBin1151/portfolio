@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnathan Park | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* 
+         * Core Aesthetic: "Interactive Minimalist"
+         * -----------------------------------------
+         * - Dark Mode Theme
+         * - Clean, spacious layout
+         * - Monospaced typography
+         */
+
+        :root {
+            --background-color: #111111;
+            --text-color: #EAEAEA;
+            --accent-color: #A41034; /* Harvard Crimson */
+        }
+
+        /* --- Base & Typography --- */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 16px;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        /* --- Headlines & Special Characters --- */
+        h1, h2, h3 {
+            font-weight: 700;
+            margin-top: 0;
+            color: var(--text-color);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Style for special characters like '//' and '$' */
+        .accent-char {
+            color: var(--accent-color);
+            margin-right: 0.5rem;
+        }
+
+        /* --- Links & Interactive Elements --- */
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+        }
+
+        /* Blinking cursor animation */
+        .cursor {
+            display: inline-block;
+            background-color: var(--accent-color);
+            margin-left: 8px;
+            width: 10px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* --- About Section --- */
+        .about-content p {
+            max-width: 800px;
+        }
+
+        /* --- Code Block Styling (for Skills, Uses) --- */
+        .code-block {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            padding: 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            white-space: pre-wrap; /* Allows wrapping */
+        }
+        
+        .code-block p {
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        /* --- Projects Section --- */
+        .project {
+            margin-bottom: 4rem;
+        }
+        .project:last-child {
+            margin-bottom: 0;
+        }
+        .project-links a {
+            margin-right: 1.5rem;
+            font-weight: 700;
+        }
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Contact Section --- */
+        .contact-links a {
+            font-size: 1.5rem;
+            margin-right: 2rem;
+        }
+        .contact-links a:last-child {
+            margin-right: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="container">
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <h1>Johnathan Park<span class="cursor">_</span></h1>
+            <p>Quietly modeling risk. Creatively pursuing opportunity.</p>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2><span class="accent-char">//</span>A little about me</h2>
+            <div class="about-content">
+                <p>
+                    I am a mathematics student at the University of Minnesota specializing in Actuarial Science and quantitative risk modeling. My work is focused on applying rigorous mathematical frameworks to model and mitigate financial risk. In preparation for a Master of Financial Mathematics and a career in quantitative analysis, I am pursuing the CFA Level 1 and SOA credentials to build a comprehensive foundation in both theoretical and applied finance.
+                </p>
+                <p>
+                    My passion lies in the space where data reveals its story. Whether analyzing economic patterns in emerging markets or exploring abstract mathematics, I search for the singular, elegant insight that brings clarity to complexity. This drive for discovery is the engine behind my work—a methodical approach to uncover the creative spark that unlocks value. It’s the core of my identity as a future hybrid quant.
+                </p>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <h2><span class="accent-char">$</span>skills --list</h2>
+            <div class="code-block">
+                <p>&gt; Languages: Python, MATLAB, SQL, R</p>
+                <p>&gt; Quantitative & Data Tools: Pandas, NumPy, Scikit-learn, Matplotlib, APIs, Google Colab</p>
+                <p>&gt; Financial Expertise: Actuarial Science Principles, Quantitative Risk Modeling, Financial Derivatives, CFA Level 1 Candidate</p>
+                <p>&gt; Certifications & Exams: Preparing for SOA Exams P & FM</p>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <h2><span class="accent-char">$</span>ls ./projects</h2>
+            
+            <article class="project">
+                <h3>Macroeconomic Indicator Analysis</h3>
+                <p>
+                    Objective: To identify and analyze the key drivers of economic growth in several southern African nations by modeling correlations between various macroeconomic indicators from the World Bank API. Process: I used Python and the Pandas library to programmatically fetch, clean, and structure time-series data. I then performed statistical analysis and used Matplotlib to visualize long-term trends and relationships between GDP per capita, foreign direct investment, and inflation rates. Outcome: The analysis produced a clear visual and statistical narrative of economic trends, highlighting the outsized impact of specific policy-driven indicators on regional growth. The project demonstrated a repeatable workflow for macroeconomic analysis. Technologies Used: Python, Pandas, Matplotlib, World Bank API, JupyterLab.
+                </p>
+                <div class="project-links">
+                    <a href="#" target="_blank">[View Visualization]</a>
+                    <a href="#" target="_blank">[View GitHub Repo]</a>
+                </div>
+            </article>
+
+            <article class="project">
+                <h3>A Machine Learning Approach to Smart Beta Factor Investing</h3>
+                <p>
+                    Objective: To design and backtest a market-neutral, long-short equity strategy that uses a machine learning model to generate alpha by dynamically learning the non-linear relationships between quantitative factors and future stock performance. Process: The strategy involved engineering over 11 quantitative factors (Momentum, Value, Quality) for S&P 500 stocks. Principal Component Analysis (PCA) was used to distill these into 9 powerful 'meta-factors', reducing noise. A LightGBM model was then trained on a 36-month rolling window within a rigorous walk-forward backtesting framework to predict top and bottom quintile performers for the subsequent month. Outcome: The strategy successfully generated pure alpha with a stable, low-volatility return profile. The final out-of-sample backtest (Jan 2022 - June 2025) yielded an Annualized Return of 3.32%, a Sharpe Ratio of 1.16, and an exceptionally low Maximum Drawdown of -2.00%. Technologies Used: Python, Pandas, NumPy, Scikit-learn, LightGBM, yfinance.
+                </p>
+                <div class="project-links">
+                    <a href="#" target="_blank">[View Project Paper]</a>
+                    <a href="#" target="_blank">[View GitHub Repo]</a>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- USES SECTION -->
+        <section id="uses">
+            <h2><span class="accent-char">//</span>My Digital Toolkit</h2>
+            <div class="code-block">
+// SOFTWARE & APPS
+- Editor: VS Code with Python & Jupyter extensions
+- Analysis: JupyterLab, Google Colab, MATLAB
+- AI Assistant: Gemini-CLI
+- Version Control: Git & GitHub
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2><span class="accent-char">//</span>Get in Touch</h2>
+            <div class="contact-links">
+                <a href="mailto:hyunmin203401@gmail.com">Email</a>
+                <a href="https://github.com/SaBin1151" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/johnathan-park-84072b249/" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
